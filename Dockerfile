@@ -11,11 +11,16 @@ RUN npm i -g @adonisjs/cli
 RUN npm i -g @angular/cli
 
 # ------------------------------------------
-# Install the Angular CLI
+# Install the Redoc CLI
 # ------------------------------------------
 RUN npm i -g redoc-cli
 
 # ------------------------------------------
-# change the work directory
+# Install the NYC CLI
+# ------------------------------------------
+RUN npm i -g nyc@latest
+
+# ------------------------------------------
+# Change the work directory
 # ------------------------------------------
 WORKDIR /var/www
