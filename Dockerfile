@@ -1,9 +1,19 @@
 FROM node:10
 
 # ------------------------------------------
-# Install the adonis CLI
+# Install the Adonis CLI
 # ------------------------------------------
 RUN npm i -g @adonisjs/cli
+
+# ------------------------------------------
+# Install the Angular CLI
+# ------------------------------------------
+RUN npm i -g @angular/cli
+
+# ------------------------------------------
+# Install the Angular CLI
+# ------------------------------------------
+RUN npm i -g redoc-cli
 
 # ------------------------------------------
 # change the work directory
