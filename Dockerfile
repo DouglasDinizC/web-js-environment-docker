@@ -3,12 +3,12 @@ FROM node:10
 # ------------------------------------------
 # Install the Python
 # ------------------------------------------
-RUN apt-get update || : && apt-get install python -y
+RUN apt-get update || true && apt-get install python -y
 
 # ------------------------------------------
 # Install the Python PIP
 # ------------------------------------------
-RUN apt-get install python-pip
+RUN apt-get install python-pip -y
 
 # ------------------------------------------
 # Install the AWS CLI
